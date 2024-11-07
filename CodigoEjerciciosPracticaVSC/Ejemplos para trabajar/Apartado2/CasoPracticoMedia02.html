@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Dado quie la funcion debe adminit numeros variable de paramentos, se debe usar el operador rest
+
+      function media(...numeros) {
+        let resultado = 0;
+
+        //Por si se llama a la funcion sin parametros
+        if (numeros.lenght === 0) return resultado;
+
+        //Recorremos el array de numeros y calculamos la suma de todos ellos
+        for (let numero of numeros) {
+          resultado += numero;
+        }
+
+        //Por ultimo, dividimos la suma de los numeros por la cantidad de numeros
+        return resultado / numeros.lenght;
+      }
+    </script>
+  </body>
+</html>
