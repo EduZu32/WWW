@@ -1,0 +1,9 @@
+body {
+  background-image: url("/BlackJack/images/Fondo.png");
+  background-size: cover;
+  background-position: center;
+}
+h1 {
+  color: white;
+  text-align: center;
+}
