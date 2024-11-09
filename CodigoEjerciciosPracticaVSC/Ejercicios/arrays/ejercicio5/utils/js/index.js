@@ -1,10 +1,10 @@
-const baraja = [];
+const baraja = []; // Crear un array vacio para la baraja
 /* 1C,2C,3C,4C,5C,6C,7C,8C,9C,10C,JC,QC,KC
 1D,2D,3D,4D,5D,6D,7D,8D,9D,10D,JD,QD,KD
 1R,2R,3R,4R,5R,6R,7R,8R,9R,10R,R,JR,QR,KR
 1P,2P,3P,4P,5P,6P,7P,8P,9P,10P,JP,QP,KP */
-const palos = ["C", "D", "R", "P"];
-const figuras = ["A", "J", "Q", "K"];
+const palos = ["C", "D", "R", "P"]; // Crear un array con los palos
+const figuras = ["A", "J", "Q", "K"]; // Crear un array con las figuras especiales
 // Crear la baraja
 for (let i = 1; i <= 13; i++) {
   for (let j = 0; j < 4; j++) {
@@ -36,9 +36,9 @@ Valor: 13
 Palo: C
  */
 // Funcion para sacar y mostrar una carta
-let intervalId = setInterval(() => { 
+let intervalId = setInterval(() => {  //Cada 5 segundos 
   //si hay cartas restantes en la baraja
-  if (barajaBarajada.length > 0) { //si hay cartas restantes en la baraja
+  if (barajaBarajada.length > 0) { //si hay cartas restantes en la baraja barajada 
     const carta = barajaBarajada.shift(); //saca la primera carta de la baraja barajada
     //Extraer el valor y el palo de la carta
     let valor = carta.substring(0, carta.length - 1); //Obtiene el valor de la carta(ej: 10, J, Q, K)
@@ -56,6 +56,6 @@ let intervalId = setInterval(() => {
     console.log("\n"); //Salto de linea
   } else {
     clearInterval(intervalId); //Detiene el intervalo si no hay cartas restantes
-    console.log("No hay cartas restantes");
+    console.log("No hay cartas restantes"); //Muestra un mensaje si no hay cartas restantes
   }
 }, 5000); //Cada 5 segundos
