@@ -1,31 +1,3 @@
-/* 1. Piramide
-
-Escriba un script que pedido por consola (prompt un número), represente por consola la siguiente figura con el número de filas introducido en el prompt.
-En el caso de no introducir un número o que sea menor que 0 saltará un aviso por consola y dará la posibilidad de repetir el proceso:
-+
-++
-+++
-++++
-+++++
-++++++
-+++++++
-Cuantas filas quieres que aparezca: 7 */
-
-let filas = prompt("Cuantas filas quieres que aparezca: ");
-if (isNaN(filas)) {
-  alert("El valor introducido no es un número");
-} else if (filas < 0) {
-  alert("El número introducido es menor que 0");
-} else {
-  for (let i = 0; i < filas; i++) {
-    let linea = "";
-    for (let j = 0; j <= i; j++) {
-      linea += "+";
-    }
-    console.log(linea);
-  }
-}
-
 const baraja = [];
 /* 1C,2C,3C,4C,5C,6C,7C,8C,9C,10C,JC,QC,KC
 1D,2D,3D,4D,5D,6D,7D,8D,9D,10D,JD,QD,KD
@@ -64,10 +36,9 @@ Valor: 13
 Palo: C
  */
 // Funcion para sacar y mostrar una carta
-let intervalId = setInterval(() => {
+let intervalId = setInterval(() => { 
   //si hay cartas restantes en la baraja
-  if (barajaBarajada.length > 0) {
-    //si hay cartas restantes en la baraja
+  if (barajaBarajada.length > 0) { //si hay cartas restantes en la baraja
     const carta = barajaBarajada.shift(); //saca la primera carta de la baraja barajada
     //Extraer el valor y el palo de la carta
     let valor = carta.substring(0, carta.length - 1); //Obtiene el valor de la carta(ej: 10, J, Q, K)
