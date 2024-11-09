@@ -14,4 +14,4 @@ let diferencia = fechaActual - fechaCumpleaños;
 let diasPasados = Math.floor(diferencia / (1000 * 60 * 60 * 24)); //math.floor redondea hacia abajo
 
 // Se muestra el resultado
-alert(`Han pasado ${diasPasados} días desde tu cumpleaños`);
+alert(`¡Han pasado ${diasPasados} días desde que naciste!`);
