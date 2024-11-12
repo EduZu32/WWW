@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario de Registro</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            
+            <div id="Titulo">
+                <h3>Formulario de Registro</h3>
+            </div>
+            
+
+            <form id="registrationForm">
+                <div>
+                    <label for="username"></label>
+                    <input type="text" id="username" name="username" placeholder="Nombre de usuario">
+                    <span id="usernameError" class="error"></span>
+                </div><br>
+                <div>
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Correo electrònico">
+                    <span id="emailError" class="error"></span>
+                </div><br>
+                <div>
+                    <label for="password"></label>
+                    <input type="password" id="password" name="password" placeholder="Contraseña">
+                    <span id="passwordError" class="error"></span>
+                </div>
+
+                <button class="btn1" type="button" id="togglePassword">Mostrar</button>
+
+                <div>
+                    <label for="confirmPassword"></label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirmar contraseña">
+                    <span id="confirmPasswordError" class="error"></span>
+                </div>
+
+                <div>
+                    <button class="btn2" type="submit">Registrarse</button>
+                </div>
+
+
+                <div id="virtualKeyboard">
+                    <!-- Teclado virtual -->
+                </div>
+
+            </form>
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>
+
+

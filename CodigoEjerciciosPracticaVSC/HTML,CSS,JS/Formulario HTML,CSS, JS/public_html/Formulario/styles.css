@@ -1,0 +1,107 @@
+.error {
+    color: red;
+}
+body {
+    margin: 0px;/*margenes 0 en todos los lados del elemento*/
+    padding: 0px;/*rellno cero de todos los lados del elemento*/
+    display: flex;/*sera un contenedor de caja flexible*/
+    justify-content: center;/*alinea los lelementos secundarios del cntender a lo largo del eje principal(horizontalmente)
+                            y los centra dentro del contenedor*/
+    align-items: center;/*alinea los lelementos secundarios del cntender a lo largo del eje principal(verticalmente)
+                            y los centra dentro del contenedor*/
+    height: 100vh;/*altura al 100% de la altura de la eventana grafica(utiliza la pantalla que tenga el dispositivo del usuario)*/
+    background: darkcyan;/*color del fondo*/
+   
+}
+#Titulo{
+    font-family: Arial, sans-serif;
+    margin: 15px 35px; /* Margen exterior */
+    font-size: 14px;
+    
+}
+.container {
+    width: 90%; /* Cambiamos el ancho a un porcentaje mayor */
+    max-width: 550px;/*este estilo establece el ancho maximo que puede tener el elemento*/
+    background-color: white;/*fondo del elemento en blanco*/
+    padding: 20px;/*establece un relleno interno*/
+    border-radius: 10px; /*aplica un redondeo en la equinas*/
+    box-shadow: 0 0 45px 5px black; /*estilo que aplica sobreado en los bordes*/
+    
+}
+#username{
+    border: 2px solid #ccc; /* Color y grosor del borde */
+    border-radius: 5px; /* Color y grosor del borde */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 8px; /* Espacio interno del recuadro */
+    width: 50%;/*establece que el ancho del elemento al que se aplica el estilo sera de 96% del ancho de su contenedor principal*/
+}
+#email{
+    border: 2px solid #ccc; /* Color y grosor del borde */
+    border-radius: 5px; /* Color y grosor del borde */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 8px; /* Espacio interno del recuadro */
+    width: 50%;/*establece que el ancho del elemento al que se aplica el estilo sera de 96% del ancho de su contenedor principal*/
+}
+#confirmPassword{
+    border: 2px solid #ccc; /* Color y grosor del borde */
+    border-radius: 5px; /* Color y grosor del borde */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 8px; /* Espacio interno del recuadro */
+    width: 50%;/*establece que el ancho del elemento al que se aplica el estilo sera de 96% del ancho de su contenedor principal*/
+}
+
+
+
+#password{
+    border: 2px solid #ccc; /* Color y grosor del borde */
+    border-radius: 5px; /* Color y grosor del borde */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 8px; /* Espacio interno del recuadro */
+    width: 50%;/*establece que el ancho del elemento al que se aplica el estilo sera de 96% del ancho de su contenedor principal*/
+}
+
+
+#virtualKeyboard button {
+    /* Estilos del teclado virtual */
+    margin-top: 8px;
+    margin-right: 4px;
+    background: darkcyan;
+    color: white;
+    font-size: 100%; /* Tamaño del texto */
+    cursor: pointer; /* Cursor de tipo puntero */
+    text-align: center;
+    padding: 1% 1.5%;
+    font-size: 12px;
+    padding: 10px;
+    
+}
+.btn2{
+     background-color: darkcyan; /* Color de fondo verde */
+    border: none; /* Sin borde */
+    color: white; /* Color del texto blanco */
+    padding: 2.5% 20%; /* Espaciado interno */
+    text-align: center; /* Alineación del texto al centro */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 12px; /* Tamaño del texto */
+    margin: 14px 2px; /* Margen exterior */
+    cursor: pointer; /* Cursor de tipo puntero */
+    border-radius: 4px; /* Bordes redondeados */    
+    
+}
+.btn1{
+     background-color: darkcyan; /* Color de fondo verde */
+    border: none; /* Sin borde */
+    color: white; /* Color del texto blanco */
+    padding: 2.5% 22.5%; /* Espaciado interno */
+    text-align: center; /* Alineación del texto al centro */
+    text-decoration: none; /* Sin decoración de texto */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 12px; /* Tamaño del texto */
+    margin: 14px 2px; /* Margen exterior */
+    cursor: pointer; /* Cursor de tipo puntero */
+    border-radius: 4px; /* Bordes redondeados */    
+}
+
+
+
+
